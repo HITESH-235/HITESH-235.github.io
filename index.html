@@ -1,14 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
-          <link rel="icon" type="image/x-icon" href="hacker.ico">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>HOME//HITESH-235</title>
+          <link rel="icon" type="image/x-icon" href="GOGGLES.ico">
+          <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+          <style>
+                    * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
+
+                    body {
+                              background-color: rgb(20,33, 52);
+                    }
+
+                    html,
+                    body {
+                              min-width: 100%;
+                              overflow-x: hidden;
+                              font-family: "Oswald";
+                    }
+
+                    header .navigation {
+                              border: white solid 5px;
+                              border-radius: 30px;
+                              font-weight: bold;
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              position: fixed;
+                              min-height: 12vh;
+                              min-width: 100%;
+                              z-index: 10;
+                              background: rgb(20, 33, 53);
+                    }
+
+                    header .navigation .logo {
+                              margin-left: 20px;
+                    }
+
+
+                    header .navigation .menu-list {
+                              list-style: none;
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              width: 50%;
+                              margin: auto 40px auto 0;
+                    }
+
+                    header .navigation .humbarger {
+                              margin-right: 20px;
+                              display: none;
+                    }
+
+                    header .navigation .humbarger .bar {
+                              width: 30px;
+                              height: 5px;
+                              margin: 10px;
+                              background: greenyellow;
+                    }
+
+                    header .navigation .menu-list li a {
+                              color: yellow;
+                              letter-spacing: 3px;
+                              text-transform: uppercase;
+                              cursor: pointer;
+                              transition: color 1s ease, border 1s ease;
+                              text-decoration: none;
+                    }
+
+                    header .navigation .menu-list li a:hover {
+                              color: white;
+                    }
+                    .mainname {
+                              margin: auto 0px auto 30px; 
+                              color: greenyellow;
+                    } 
+                    @media only screen and (max-width: 870px) {
+
+                              header .navigation .menu-list {
+                                        position: absolute;
+                                        top: 12vh;
+                                        min-width: 100%;
+                                        background: rgba(15, 20, 35, 0.99);
+                                        text-align: center;
+                                        display: none;
+                              }
+
+                              header .navigation .menu-list li {
+                                        display: block;
+                              }
+
+                              header .navigation .menu-list li a {
+                                        display: block;
+                                        padding: 20px;
+                                        transition: color 1s ease, padding 1s ease, background-color 1s ease;
+
+                              }
+
+                              header .navigation .menu-list li a:hover {
+                                        color: white;
+                                        padding-left: 30px;
+                                        background: rgb(5, 121, 183);
+                              }
+
+
+                              header .navigation .humbarger {
+                                        display: block;
+                              }
+
+                              header .navigation .logo {
+                              margin-left: 0px;
+                              }
+                              .mainname {
+                                        margin: auto 0px auto 0px; 
+                                        color: yellow;
+                              }
+                    }
+          </style>
 </head>
+
 <body>
-          <h1>HELLOOO WORLD</h1>
-          <h2>This is HITESH-235 welcome to my site........................</h2>
+          <!--====== Header Section Start ======-->
+          <header>
+                    <nav class="navigation">
+
+                              <!-- Logo -->
+                              <div class="logo" style="display: flex;">
+                                        <img src="LOGO.png" alt="" height="120px">
+                                        <h2 class="mainname">HITESH-235</h2>
+                              </div>
+
+                              <!-- Navigation -->
+                              <ul class="menu-list">
+                                        <li><a href="https://github.com/HITESH-235">GITHUB</a></li>
+                                        <li><a href="https://www.facebook.com/HITESH235/">FACEBOOK</a></li>
+                                        <li><a href="mailto:sinhahitesh0307@gmail.com">E-MAIL</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                              </ul>
+
+                              <div class="humbarger">
+                                        <div class="bar"></div>
+                                        <div class="bar2 bar"></div>
+                                        <div class="bar"></div>
+                              </div>
+                    </nav>
+          </header>
+          <hr style="margin-top: 180px;  border: transparent;">
+          <h4 ><a href="PROJECT0.html"style="font-weight: bold; color: turquoise; margin-left: 20px; text-decoration:  none;" >//1&emsp;PROJECT - ZERO//</a></h4>
 </body>
+<script>
+          $(document).ready(function () {
+
+                    //hamburger Toggle
+                    $('.humbarger').click(function (event) {
+                              $('.menu-list').slideToggle(500);
+                              event.preventDefault();
+
+                              $('.menu-list li a').click(function (event) {
+                                        if ($(window).width() < 768) {
+                                                  $('.menu-list').slideUp(500);
+                                                  event.preventDefault();
+                                        }
+                              });
+                    });
+
+          });
+</script>
+
 </html>
