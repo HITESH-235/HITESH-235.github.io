@@ -19,7 +19,7 @@
                     }
 
                     body {
-                              background-color: rgb(20,33, 52);
+                              background-color: rgb(20, 33, 52);
                     }
 
                     html,
@@ -82,10 +82,16 @@
                     header .navigation .menu-list li a:hover {
                               color: white;
                     }
+
                     .mainname {
-                              margin: auto 0px auto 30px; 
+                              margin: auto 0px auto 30px;
                               color: greenyellow;
-                    } 
+                    }
+                    .PR_0:hover {
+                              text-decoration: underline;
+                              color: springgreen;
+                    }
+
                     @media only screen and (max-width: 870px) {
 
                               header .navigation .menu-list {
@@ -122,8 +128,9 @@
                               header .navigation .logo {
                                         margin-left: 0px;
                               }
+
                               .mainname {
-                                        margin: auto 0px auto 0px; 
+                                        margin: auto 0px auto 0px;
                                         color: yellow;
                               }
                     }
@@ -157,7 +164,8 @@
                     </nav>
           </header>
           <hr style="margin-top: 200px;  border: transparent;">
-          <h3 ><a href="PROJECT0.html"style="font-weight: bold; color: turquoise; margin-left: 20px; text-decoration:  none;" >//PROJECT:ZERO//ADD-NOTES</a></h3>
+          <h3><a href="PROJECT0.html" style="font-weight: bold; color: turquoise; margin-left: 20px; text-decoration:  none;" class="PR_0">//PROJECT:ZERO//ADD-NOTES</a>
+          </h3>
 </body>
 <script>
           $(document).ready(function () {
@@ -167,12 +175,6 @@
                               $('.menu-list').slideToggle(500);
                               event.preventDefault();
 
-                              // $('.menu-list li a').click(function (event) {
-                              //           if ($(window).width() < 768) {
-                              //                     $('.menu-list').slideUp(500);
-                              //                     event.preventDefault();
-                              //           }
-                              // });
                     });
 
           });
