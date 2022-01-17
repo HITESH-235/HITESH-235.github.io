@@ -48,7 +48,7 @@
 .buttons {
           display: flex;
           flex-flow: row-reverse;
-          justify-content: space-evenly;
+          justify-content: space-between;
           margin: 0px 15px 15px 15px;
 }
 
