@@ -23,9 +23,8 @@
 }
 
 .h1 {
-          text-shadow:
-                    0 0 5px #2daaf2, 0 0 10px #2daaf2,
-                    0 0 20px #2daaf2, 0 0 40px #2daaf2;
+          text-shadow: 0 0 5px #2daaf2, 0 0 10px #2daaf2, 0 0 20px #2daaf2,
+                    0 0 40px #2daaf2;
           text-align: center;
           color: whitesmoke;
           font-size: 70px;
@@ -38,7 +37,7 @@
           /* border-radius: 10px; */
           border: 5px solid lightgray;
           font-size: 25px;
-          font-family: 'Oswald';
+          font-family: "Oswald";
           font-weight: bold;
           color: aquamarine;
           letter-spacing: 1px;
@@ -65,9 +64,8 @@
 }
 
 #h1id {
-          text-shadow:
-                    0 0 10px #009efa, 0 0 20px #009efa,
-                    0 0 30px #009efa, 0 0 50px #009efa;
+          text-shadow: 0 0 10px #009efa, 0 0 20px #009efa, 0 0 30px #009efa,
+                    0 0 50px #009efa;
 }
 
 #btn_x {
@@ -81,7 +79,7 @@
           flex-shrink: 1;
           width: unset;
           margin: 2px;
-          font-family: 'Oswald';
+          font-family: "Oswald";
           font-size: 23px;
           font-weight: 300;
           background-color: slateblue;
@@ -90,7 +88,8 @@
           margin-bottom: 4px;
 }
 
-.btn:hover, .btn:active {
+.btn:hover,
+.btn:active {
           background: darkslategray;
 }
 
@@ -101,7 +100,7 @@
 #searchbar_id {
           font-weight: bold;
           font-family: inherit;
-          background-image: url('https://www.w3schools.com/css/searchicon.png');
+          background-image: url("https://www.w3schools.com/css/searchicon.png");
           background-position: 7px 7px;
           background-repeat: no-repeat;
           padding: 0px 0px 2px 40px;
@@ -122,9 +121,8 @@
 }
 
 .h3 {
-          text-shadow:
-                    0 0 1px yellow, 0 0 2px yellow,
-                    0 0 10px yellow, 0 0 20px yellow;
+          text-shadow: 0 0 1px yellow, 0 0 2px yellow, 0 0 10px yellow,
+                    0 0 20px yellow;
           margin: auto;
           margin-top: 10px;
           font-weight: 500;
@@ -157,9 +155,8 @@ footer {
           font-weight: 400;
           text-align: center;
           letter-spacing: 1px;
-          text-shadow:
-                    0 0 1px orange, 0 0 2px orange,
-                    0 0 10px orange, 0 0 20px orange;
+          text-shadow: 0 0 1px orange, 0 0 2px orange, 0 0 10px orange,
+                    0 0 20px orange;
 }
 
 #footerid {
