@@ -23,8 +23,7 @@
 }
 
 .h1 {
-          text-shadow: 0 0 5px #2daaf2, 0 0 10px #2daaf2, 0 0 20px #2daaf2,
-                    0 0 40px #2daaf2;
+          text-shadow: 0 0 5px #2daaf2, 0 0 10px #2daaf2, 0 0 20px #2daaf2, 0 0 40px #2daaf2;
           text-align: center;
           color: whitesmoke;
           font-size: 70px;
@@ -64,8 +63,7 @@
 }
 
 #h1id {
-          text-shadow: 0 0 10px #009efa, 0 0 20px #009efa, 0 0 30px #009efa,
-                    0 0 50px #009efa;
+          text-shadow: 0 0 10px #009efa, 0 0 20px #009efa, 0 0 30px #009efa, 0 0 50px #009efa;
 }
 
 #btn_x {
@@ -121,8 +119,7 @@
 }
 
 .h3 {
-          text-shadow: 0 0 1px yellow, 0 0 2px yellow, 0 0 10px yellow,
-                    0 0 20px yellow;
+          text-shadow: 0 0 1px yellow, 0 0 2px yellow, 0 0 10px yellow, 0 0 20px yellow;
           margin: auto;
           margin-top: 10px;
           font-weight: 500;
@@ -155,8 +152,7 @@ footer {
           font-weight: 400;
           text-align: center;
           letter-spacing: 1px;
-          text-shadow: 0 0 1px orange, 0 0 2px orange, 0 0 10px orange,
-                    0 0 20px orange;
+          text-shadow: 0 0 1px orange, 0 0 2px orange, 0 0 10px orange, 0 0 20px orange;
 }
 
 #footerid {

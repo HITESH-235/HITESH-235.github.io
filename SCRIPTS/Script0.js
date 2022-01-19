@@ -40,43 +40,21 @@ function btn_x() {
                               notesObj.forEach(function (element, index) {
                                         // x_message.value = `NOTE ${index + 1}`;
                                         // let x_message2 = document.getElementById('title');
-                                        let x_notes2 =
-                                                  localStorage.getItem(
-                                                            "headings"
-                                                  );
+                                        let x_notes2 = localStorage.getItem("headings");
                                         if (x_notes2 == null) {
                                                   x_notesObj2 = [];
                                         } else {
-                                                  x_notesObj2 =
-                                                            JSON.parse(
-                                                                      x_notes2
-                                                            );
+                                                  x_notesObj2 = JSON.parse(x_notes2);
                                         }
                                         // let brain;
                                         if (x_notesObj2.length == 0) {
                                                   x_message.value = 1;
-                                                  keep_num = Number(
-                                                            x_message.value
-                                                  );
+                                                  keep_num = Number(x_message.value);
                                         } else {
                                                   let a_num = 0;
-                                                  for (
-                                                            let num = 0;
-                                                            num <
-                                                            x_notesObj2.length;
-                                                            num++
-                                                  ) {
-                                                            if (
-                                                                      typeof x_notesObj2[
-                                                                                num
-                                                                      ] ===
-                                                                      "number"
-                                                            ) {
-                                                                      keep_num =
-                                                                                x_notesObj2[
-                                                                                          num
-                                                                                ] +
-                                                                                1;
+                                                  for (let num = 0; num < x_notesObj2.length; num++) {
+                                                            if (typeof x_notesObj2[num] === "number") {
+                                                                      keep_num = x_notesObj2[num] + 1;
                                                                       a_num = 1;
                                                             }
                                                             if (a_num == 0) {
@@ -90,10 +68,7 @@ function btn_x() {
                               keep_num = x_message.value;
                     }
                     x_notesObj.push(keep_num);
-                    localStorage.setItem(
-                              "headings",
-                              JSON.stringify(x_notesObj)
-                    );
+                    localStorage.setItem("headings", JSON.stringify(x_notesObj));
                     notesObj.push(message.value);
                     localStorage.setItem("notes", JSON.stringify(notesObj));
                     showNotes();
@@ -107,16 +82,12 @@ function renameFiles(arr) {
           var count = {};
           arr.forEach(function (x, i) {
                     if (arr.indexOf(x) !== i) {
-                              var c =
-                                        x in count
-                                                  ? (count[x] = count[x] + 1)
-                                                  : (count[x] = 1);
+                              var c = x in count ? (count[x] = count[x] + 1) : (count[x] = 1);
                               var j = c + 1;
                               var m = j - 1;
                               var k = x + "(" + m + ")";
 
-                              while (arr.indexOf(k) !== -1)
-                                        k = x + "(" + ++m + ")";
+                              while (arr.indexOf(k) !== -1) k = x + "(" + ++m + ")";
                               arr[i] = k;
                     }
           });
@@ -139,9 +110,7 @@ function showNotes() {
           }
           let html = "";
           notesObj.forEach(function (element, index) {
-                    heading = JSON.parse(localStorage.getItem("headings"))[
-                              index
-                    ];
+                    heading = JSON.parse(localStorage.getItem("headings"))[index];
                     if (typeof heading === "number") {
                               heading2 = "NOTE " + heading;
                     } else {
@@ -154,9 +123,7 @@ function showNotes() {
         <h3 class="h3">${name_array_2[index]}</h3>
         <textarea readonly id="message${index}" class='message' cols="20" rows="5">${element}</textarea>
         <div class='buttons' id='No.${index}'><button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">Delete Note</button>
-        <button class='btn' id='${
-                  index + 1
-        }' onclick="make_edit(this.id)">Edit</button>
+        <button class='btn' id='${index + 1}' onclick="make_edit(this.id)">Edit</button>
         </div>
         </div>`;
                     // heading2 = "";
@@ -213,9 +180,7 @@ function make_edit(index) {
                     notesObj = JSON.parse(notes);
           }
           let int_index = Number(index);
-          document.getElementById(`message${int_index - 1}`).removeAttribute(
-                    "readonly"
-          );
+          document.getElementById(`message${int_index - 1}`).removeAttribute("readonly");
           let just_chose = document.getElementById(`message${int_index - 1}`);
           base_text = just_chose.value;
           let child1 = document.createElement("button");
@@ -317,18 +282,10 @@ x_search_input.addEventListener("keyup", function (event) {
                               console.log(note_cards_2);
                               // console.log(note_cards)
                               txtValue = note_cards_2.innerText;
-                              if (
-                                        txtValue
-                                                  .toLowerCase()
-                                                  .indexOf(lower_search) > -1
-                              ) {
-                                        note_cards[
-                                                  c_title
-                                        ].parentNode.style.display = "";
+                              if (txtValue.toLowerCase().indexOf(lower_search) > -1) {
+                                        note_cards[c_title].parentNode.style.display = "";
                               } else {
-                                        note_cards[
-                                                  c_title
-                                        ].parentNode.style.display = "none";
+                                        note_cards[c_title].parentNode.style.display = "none";
                               }
                     }
                     x_search_a.replaceWith(x_search);
