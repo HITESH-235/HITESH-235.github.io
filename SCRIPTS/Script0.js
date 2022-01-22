@@ -9,7 +9,9 @@ showNotes();
 var base_text;
 var keep_num;
 
-function myFunction() {
+//  ____REVEALING HAMBURGER____
+
+function showbars() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
                     x.className += " responsive";
@@ -18,7 +20,7 @@ function myFunction() {
           }
 }
 
-function btn_x() {
+function save() {
           let message = document.getElementById("message_1");
           if (String(message.value).length !== 0) {
                     let notes = localStorage.getItem("notes");
@@ -27,7 +29,6 @@ function btn_x() {
                     } else {
                               notesObj = JSON.parse(notes);
                     }
-                    //   console.log(notesObj);
                     let x_message = document.getElementById("title");
                     let x_notes = localStorage.getItem("headings");
                     if (x_notes == null) {
@@ -38,8 +39,6 @@ function btn_x() {
                     if (x_message.value.length == 0) {
                               notesObj.push("");
                               notesObj.forEach(function (element, index) {
-                                        // x_message.value = `NOTE ${index + 1}`;
-                                        // let x_message2 = document.getElementById('title');
                                         let x_notes2 = localStorage.getItem("headings");
                                         if (x_notes2 == null) {
                                                   x_notesObj2 = [];
@@ -78,7 +77,9 @@ function btn_x() {
           }
 }
 
-function renameFiles(arr) {
+// ____SHOWING THE NOTE CARDS____
+
+function renameheading(arr) {
           var count = {};
           arr.forEach(function (x, i) {
                     if (arr.indexOf(x) !== i) {
@@ -102,33 +103,29 @@ function showNotes() {
                     notesObj = JSON.parse(notes);
           }
 
-          let x_notes = localStorage.getItem("headings");
-          if (x_notes == null) {
-                    x_notesObj = [];
+          let headings = localStorage.getItem("headings");
+          if (headings == null) {
+                    headingsObj = [];
           } else {
-                    x_notesObj = JSON.parse(x_notes);
+                    headingsObj = JSON.parse(headings);
           }
           let html = "";
           notesObj.forEach(function (element, index) {
-                    heading = JSON.parse(localStorage.getItem("headings"))[index];
+                    heading = headingsObj[index];
                     if (typeof heading === "number") {
-                              heading2 = "NOTE " + heading;
+                              final_heading = "NOTE " + heading;
                     } else {
-                              heading2 = heading;
+                              final_heading = heading;
                     }
-                    name_array.push(heading2);
-                    name_array_2 = name_array;
-                    renameFiles(name_array_2);
+                    name_array.push(final_heading);
+                    renameheading(name_array);
                     html += `<div class="noteschild">
-        <h3 class="h3">${name_array_2[index]}</h3>
+        <h3 class="h3">${name_array[index]}</h3>
         <textarea readonly id="message${index}" class='message' cols="20" rows="5">${element}</textarea>
         <div class='buttons' id='No.${index}'><button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">Delete Note</button>
         <button class='btn' id='${index + 1}' onclick="make_edit(this.id)">Edit</button>
         </div>
         </div>`;
-                    // heading2 = "";
-                    // name_array =/ [];
-                    // num_array_2 = [];
           });
           name_array = [];
           let notesElm = document.getElementById("notes");
@@ -140,8 +137,9 @@ function showNotes() {
           }
 }
 
+//  ____WHEN DELETE TRIGGERED____
+
 function deleteNote(index) {
-          // general_delete();
           let notes = localStorage.getItem("notes");
           if (notes == null) {
                     notesObj = [];
@@ -171,6 +169,8 @@ function deleteNote(index) {
           }
           console.log(name_array_2);
 }
+
+//  ____WHEN EDIT IS TRIGGERED____
 
 function make_edit(index) {
           let notes = localStorage.getItem("notes");
@@ -202,6 +202,8 @@ function make_edit(index) {
           to_be_replaced.replaceWith(parent1);
 }
 
+// ____AFTER EDIT IS TRIGGERED____
+
 function lets_cancel(index) {
           let int_index2 = Number(index);
           let parent2 = document.getElementById("notHappen");
@@ -221,7 +223,6 @@ function lets_cancel(index) {
           child_x2.innerText = "Edit";
           to_be_replaced1.appendChild(child_x2);
           parent2.replaceWith(to_be_replaced1);
-          // console.log(to_be_replaced1)
           let just_chose2 = document.getElementById(`message${int_index2 - 2}`);
           just_chose2.setAttribute("readonly", true);
           just_chose2.value = base_text;
@@ -246,7 +247,6 @@ function lets_save(index) {
           child_x2.innerText = "Edit";
           to_be_replaced1.appendChild(child_x2);
           parent2.replaceWith(to_be_replaced1);
-          // console.log(to_be_replaced1)
           let just_chose2 = document.getElementById(`message${int_index2 - 3}`);
           just_chose2.setAttribute("readonly", true);
           just_chose2.innerText = just_chose2.value;
@@ -255,6 +255,8 @@ function lets_save(index) {
           x_try[y] = just_chose2.value;
           localStorage.setItem("notes", JSON.stringify(x_try));
 }
+
+// ____SEARCH SECTION____
 
 let x_search_a = document.createElement("a");
 x_search_a.className = "searchbar";
@@ -268,10 +270,7 @@ let x_search = document.getElementById("search");
 function change_to_searchable() {
           x_search.replaceWith(x_search_a);
 }
-// x_search_input.addEventListener('click',make_searchable_2);
-// function make_searchable_2() {
-//           x_search_input.style.background = "#ddd";
-// };
+
 x_search_input.addEventListener("keyup", function (event) {
           if (event.keyCode === 13) {
                     let lower_search = x_search_input.value.toLowerCase();
@@ -280,7 +279,6 @@ x_search_input.addEventListener("keyup", function (event) {
                     for (c_title = 0; c_title < note_cards.length; c_title++) {
                               note_cards_2 = note_cards[c_title];
                               console.log(note_cards_2);
-                              // console.log(note_cards)
                               txtValue = note_cards_2.innerText;
                               if (txtValue.toLowerCase().indexOf(lower_search) > -1) {
                                         note_cards[c_title].parentNode.style.display = "";
