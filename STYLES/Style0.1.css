@@ -1,0 +1,91 @@
+.body {
+          word-spacing: 1px;
+}
+
+/* NAVIGATION */
+
+.nav-item {
+          align-self: center;
+          padding: 0px 5px;
+          text-decoration: underline;
+          font-size: 1rem;
+}
+#navbar {
+          flex-direction: column;
+          margin-bottom: 50px;
+}
+#navbar ul {
+          justify-content: space-evenly;
+          padding: 0%;
+}
+#logo {
+          height: 80px;
+          margin: 10px auto 5px auto;
+}
+
+/* HOME SECTION */
+
+#home {
+          height: auto;
+          margin-bottom: 30px;
+}
+#home p {
+          font-size: 0.8rem;
+}
+#h-primary{
+          font-size: 2rem;
+}
+.btn {
+          font-size: 1rem;
+          margin-bottom: 90px;
+}
+
+/* OUR SERVICES SECTION */
+
+#h-2nd {
+          font-size: 2.3rem;
+}
+.h-secondary {
+          font-size: 1.5rem;
+}
+#services p {
+          font-size: 0.8rem;
+}
+#services {
+          margin: 10px;
+          flex-flow: row wrap;
+}
+#services .box {
+          flex-grow: 1;
+          flex-shrink: 1;
+}
+#food {
+          width: 230px;
+}
+
+/* OUR CLIENTS SECTION  */
+
+.client-item {
+          padding: 10px;
+}
+#Skype {
+          width: 250px;
+          height: auto;
+}
+.h-3rd {
+          font-size: 2.5rem;
+          margin-bottom: 30px;
+}
+#client-section {
+          margin-bottom: 50px;
+}
+
+/* CONTACT US SECTION */
+
+#contact-box form {
+          width: 80%;
+}
+
+footer {
+          font-size: 0.8rem;
+}
