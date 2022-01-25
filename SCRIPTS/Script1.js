@@ -264,6 +264,7 @@ x_search_a.id = "searchbar_parent_id";
 let x_search_input = document.createElement("input");
 x_search_input.className = "searchbar";
 x_search_input.setAttribute("placeholder", "Search");
+x_search_input.setAttribute("type", "search");
 x_search_input.id = "searchbar_id";
 x_search_a.appendChild(x_search_input);
 let x_search = document.getElementById("search");

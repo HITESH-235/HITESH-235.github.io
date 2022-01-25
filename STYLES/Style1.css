@@ -93,14 +93,15 @@
 #searchbar_id {
           font-weight: bold;
           font-family: inherit;
-          background-image: url("https://www.w3schools.com/css/searchicon.png");
-          background-position: 5px 3px;
-          background-repeat: no-repeat;
-          padding: 0px 0px 3px 40px;
+          height: 35px;
+}
+.searchbar {
+          font-size: 20px;
 }
 
 .searchbar::placeholder {
           font-weight: bold;
+          font-size: 20px;
 }
 
 /*  NOTE CARD*/

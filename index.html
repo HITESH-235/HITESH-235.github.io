@@ -9,25 +9,16 @@
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-                    <style>
-                              * {
-                                        margin: 0;
-                                        padding: 0;
-                                        box-sizing: border-box;
-                              }
-
-                              body {
-                                        background-color: rgb(20, 33, 42);
-                              }
-
+                    <style>   
                               html,
                               body {
-                                        width: 100%;
-                                        overflow-x: hidden;
+                                        margin: 0%;
+                                        background-color: rgb(20, 33, 42);
                                         font-family: "Oswald";
+                                        margin: 0;
                               }
 
-                              header .navigation {
+                              .navigation {
                                         position: relative;
                                         margin-top: 10px;
                                         border: white solid 5px;
@@ -37,36 +28,44 @@
                                         justify-content: space-between;
                                         align-items: center;
                                         height: 140px;
-                                        width: 100%;
+                                        width: auto;
                                         background: rgb(20, 33, 53);
+                                        margin: 8px;
+                                        align-self: center;
+                              }
+                              .nav_child {
+                                        display: flex; 
+                                        flex-flow: row
                               }
 
-                              header .navigation .logo {
+                              #logo {
                                         margin-left: 20px;
+                                        border: 4px solid #69ff6a;
+                                        border-radius: 80px;
                               }
 
-                              header .navigation .menu-list {
-                                        list-style: none;
+                              .menu-list {
                                         display: flex;
-                                        justify-content: space-between;
+                                        flex-direction: row;
+                                        justify-content: space-evenly;
+                                        list-style: none;
                                         align-items: center;
                                         width: 50%;
-                                        margin: auto 40px auto 0;
                               }
 
-                              header .navigation .humbarger {
+                              .humbarger {
                                         margin-right: 20px;
                                         display: none;
                               }
 
-                              header .navigation .humbarger .bar {
+                              .bar {
                                         width: 30px;
                                         height: 5px;
                                         margin: 10px;
                                         background: greenyellow;
                               }
 
-                              header .navigation .menu-list li a {
+                              .links {
                                         color: yellow;
                                         letter-spacing: 3px;
                                         text-transform: uppercase;
@@ -75,14 +74,8 @@
                                         text-decoration: none;
                               }
 
-                              header .navigation .menu-list li a:hover {
+                              .links:hover {
                                         color: white;
-                              }
-
-                              #logo {
-                                        margin: 6px;
-                                        border: 4px solid #69ff6a;
-                                        border-radius: 80px;
                               }
 
                               .mainname {
@@ -95,9 +88,10 @@
                                         margin-left: 10px;
                               }
                               .P_R {
-                                        /* text-decoration: none; */
                                         font-weight: bold;
                                         color: #4eedff;
+                                        padding-bottom: 13px;
+                                        display: block;
                               }
                               
                               .P_R:hover {
@@ -110,38 +104,39 @@
                               }
 
                               @media only screen and (max-width: 870px) {
-                                        header .navigation .menu-list {
+                                        .menu-list {
                                                   position: absolute;
                                                   top: 12vh;
                                                   min-width: 100%;
-                                                  background: rgba(15, 20, 25, 0.99);
+                                                  background: rgba(15, 20, 25, 0.907);
                                                   text-align: center;
                                                   display: none;
+                                                  margin: 0%;
+                                                  padding: 0%;
+                                                  border-radius: 10px;
+
                                         }
 
-                                        header .navigation .menu-list li {
+                                        .link_parent {
                                                   display: block;
                                         }
 
-                                        header .navigation .menu-list li a {
+                                        .links {
                                                   display: block;
-                                                  padding: 20px;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 20px;
                                                   transition: color 1s ease, padding 1s ease, background-color 1s ease;
                                         }
 
-                                        header .navigation .menu-list li a:hover {
+                                        .links:hover {
                                                   color: white;
                                                   padding-left: 30px;
                                                   background: rgb(5, 121, 183);
                                         }
 
-                                        header .navigation .humbarger {
+                                        .humbarger {
                                                   display: block;
                                         }
-
-                                        header .navigation .logo {
-                                                  margin-left: 0px;
-                                        }                                       
 
                                         .mainname {
                                                   margin: auto 0px auto 10px;
@@ -160,25 +155,23 @@
                     <!--====== Header Section Start ======-->
                     <header>
                               <nav class="navigation">
-                                        <!-- Logo -->
-                                        <!-- <div class="logo" style="display: flex"> -->
-                                        <div style="display: flex; flex-flow: row">
+                                        <div class="nav_child">
                                                   <img src="IMAGES/LOGO.png" alt="" height="110px" id="logo">
                                                   <h2 class="mainname">HITESH-235</h2>
                                         </div>
 
                                         <!-- Navigation -->
                                         <ul class="menu-list">
-                                                  <li>
-                                                            <a href="https://github.com/HITESH-235">GITHUB</a>
+                                                  <li class="link_parent">
+                                                            <a href="https://github.com/HITESH-235" class="links">GITHUB</a>
                                                   </li>
-                                                  <li>
-                                                            <a href="https://www.facebook.com/HITESH235/">FACEBOOK</a>
+                                                  <li class="link_parent">
+                                                            <a href="https://www.facebook.com/HITESH235/" class="links">FACEBOOK</a>
                                                   </li>
-                                                  <li>
-                                                            <a href="mailto:sinhahitesh0307@gmail.com">E-MAIL</a>
+                                                  <li class="link_parent">
+                                                            <a href="mailto:sinhahitesh0307@gmail.com" class="links">E-MAIL</a>
                                                   </li>
-                                                  <li><a href="#">ABOUT</a></li>
+                                                  <li class="link_parent"><a href="#" class="links">ABOUT</a></li>
                                         </ul>
 
                                         <div class="humbarger">
@@ -189,9 +182,9 @@
                               </nav>
                     </header>
                     <h3 class="PR">
-                              <a href="PROJECTS/Project0.html" class="P_R">//PROJECT: ZERO//OnlineFoodDeliveryServices</a><br><br>
+                              <a href="PROJECTS/Project0.html" class="P_R">//PROJECT: ZERO//MY-ONLINE-MEALS</a>
                               <a href="PROJECTS/Project1.html" class="P_R">//PROJECT: ONE//ADD-NOTES</a>
-                    </h3><br><br><br><br><br><br><br><br><br><br><br>
+                    </h3>
           </body>
           <script>
                     $(document).ready(function () {
