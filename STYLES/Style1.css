@@ -3,7 +3,7 @@
           background: white;
 }
 ::-webkit-scrollbar-thumb {
-          background: lightblue;
+          background: #83ff83;
           border: 2px black solid;
 }
 ::-webkit-scrollbar-button {
