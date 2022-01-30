@@ -1,15 +1,16 @@
 ::-webkit-scrollbar {
         width: 20px;
-        background: white;
+        background: black;
+        border: 3px grey solid;
 }
 ::-webkit-scrollbar-thumb {
-        background: rgb(0, 191, 255);
-        border: 2px black solid;
+        background: #007bc2;
+        border: 3px white solid;
+        border-right: none;
 }
 ::-webkit-scrollbar-button {
         background-color: #83ff83;
         height: 20px;
-        border: 2px black solid;
 }
 
 #body {
@@ -70,6 +71,22 @@
 #title {
         flex-grow: 2;
 }
+textarea {
+        resize: none;
+        cursor: unset;
+}
+textarea::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 5px;
+}
+textarea::-webkit-scrollbar-button {
+        display: none;
+}
 #save {
         flex-grow: 1.5;
 }
@@ -97,7 +114,8 @@
 
 .btn:hover,
 .btn:active {
-        background: darkslategray;
+        background: black;
+        cursor: pointer;
 }
 
 /* SEARCHBAR(#SEARCHBAR_ID )*/
@@ -138,6 +156,7 @@
         text-shadow: 0 0 1px yellow, 0 0 2px yellow, 0 0 10px yellow, 0 0 20px yellow;
         margin: auto;
         margin-top: 10px;
+        word-break: break-all;
 }
 
 #notes {
