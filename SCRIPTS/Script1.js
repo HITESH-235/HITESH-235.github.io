@@ -51,8 +51,15 @@ function save() {
                                         keep_num = Number(x_message.value);
                                 } else {
                                         let a_num = 0;
-                                        for (let num = 0; num < x_notesObj2.length; num++) {
-                                                if (typeof x_notesObj2[num] === "number") {
+                                        for (
+                                                let num = 0;
+                                                num < x_notesObj2.length;
+                                                num++
+                                        ) {
+                                                if (
+                                                        typeof x_notesObj2[num] ===
+                                                        "number"
+                                                ) {
                                                         keep_num = x_notesObj2[num] + 1;
                                                         a_num = 1;
                                                 }
@@ -122,8 +129,9 @@ function showNotes() {
                 html += `<div class="noteschild">
         <h3 class="h3">${name_array[index]}</h3>
         <textarea readonly id="message${index}" class='message' cols="20" rows="5">${element}</textarea>
-        <div class='buttons' id='No.${index}'><button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">DELETE NOTE</button>
+        <div class='buttons' id='No.${index}'>
         <button class='btn' id='${index + 1}' onclick="make_edit(this.id)">EDIT</button>
+        <button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">DELETE NOTE</button>
         </div>
         </div>`;
         });
@@ -214,14 +222,14 @@ function lets_cancel(index) {
         child_x1.className = "btn";
         child_x1.id = `NO.${int_index2 - 2}`;
         child_x1.setAttribute("onclick", "deleteNote(this.id)");
-        child_x1.innerText = "Delete Note";
-        to_be_replaced1.appendChild(child_x1);
+        child_x1.innerText = "DELETE NOTE";
         let child_x2 = document.createElement("button");
         child_x2.className = "btn";
         child_x2.id = `${int_index2 - 1}`;
         child_x2.setAttribute("onclick", "make_edit(this.id)");
         child_x2.innerText = "EDIT";
         to_be_replaced1.appendChild(child_x2);
+        to_be_replaced1.appendChild(child_x1);
         parent2.replaceWith(to_be_replaced1);
         let just_chose2 = document.getElementById(`message${int_index2 - 2}`);
         just_chose2.setAttribute("readonly", true);
@@ -238,14 +246,14 @@ function lets_save(index) {
         child_x1.className = "btn";
         child_x1.id = `NO.${int_index2 - 3}`;
         child_x1.setAttribute("onclick", "deleteNote(this.id)");
-        child_x1.innerText = "Delete Note";
-        to_be_replaced1.appendChild(child_x1);
+        child_x1.innerText = "DELETE NOTE";
         let child_x2 = document.createElement("button");
         child_x2.className = "btn";
         child_x2.id = `${int_index2 - 2}`;
         child_x2.setAttribute("onclick", "make_edit(this.id)");
         child_x2.innerText = "EDIT";
         to_be_replaced1.appendChild(child_x2);
+        to_be_replaced1.appendChild(child_x1);
         parent2.replaceWith(to_be_replaced1);
         let just_chose2 = document.getElementById(`message${int_index2 - 3}`);
         just_chose2.setAttribute("readonly", true);
