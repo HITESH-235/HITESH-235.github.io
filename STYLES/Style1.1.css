@@ -1,0 +1,32 @@
+.topnav a:not(:first-child) {
+     display: none;
+}
+
+.topnav a.icon {
+     float: right;
+     display: block;
+}
+
+.topnav.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 30px;
+}
+
+.topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+}
+
+#title {
+     flex-grow: 1;
+}
+#save {
+     flex-grow: 2;
+}
+
+footer {
+     font-size: 20px;
+}

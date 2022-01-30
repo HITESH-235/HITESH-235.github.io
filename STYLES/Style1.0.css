@@ -49,6 +49,7 @@
 .message {
      background-color: #242526;
      border: 5px solid lightgray;
+     border-radius: 5px;
      font-size: 25px;
      font-family: "Chakra Petch";
      font-weight: bold;
@@ -81,6 +82,8 @@
 /* ALL BUTTONS (.BTN) */
 
 .btn {
+     border: 4px white solid;
+     border-radius: 5px;
      flex-grow: 1;
      flex-shrink: 1;
      width: unset;
@@ -164,7 +167,7 @@ footer {
      width: 100%;
      margin-bottom: 10px;
      overflow: hidden;
-     font-size: 20px;
+     font-size: 23px;
 }
 .footerlink {
      color: white;
