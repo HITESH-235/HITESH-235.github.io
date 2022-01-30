@@ -5,30 +5,32 @@
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>HITESH-235//HOME</title>
           <link rel="icon" type="image/x-icon" href="IMAGES/LOGO.ico" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
+               href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap"
                rel="stylesheet"
-               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
           <style>
                html,
                body {
                     margin: 0%;
                     background-color: rgb(20, 33, 42);
-                    font-family: "Oswald";
+                    font-family: "Chakra Petch";
                     margin: 0;
+                    letter-spacing: 0px;
+                    font-weight: normal;
                }
 
                .navigation {
                     position: relative;
-                    margin-top: 10px;
                     border: white solid 5px;
                     border-radius: 30px;
                     font-weight: bold;
+                    align-items: center;
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
                     height: 160px;
                     width: auto;
                     background: rgb(20, 33, 53);
@@ -49,23 +51,21 @@
                }
 
                .menu-list {
+                    position: absolute;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
                     list-style: none;
                     align-items: center;
                     width: 50%;
-               }
-
-               .humbarger {
-                    margin-right: 10px;
-                    display: none;
+                    right: 0;
                }
 
                .bar {
+                    display: none;
                     width: 30px;
-                    height: 5px;
-                    margin: 10px;
+                    height: 6px;
+                    margin: 6px 15px 6px 10px;
                     background: greenyellow;
                }
 
@@ -74,7 +74,10 @@
                     text-transform: uppercase;
                     cursor: pointer;
                     text-decoration: none;
-                    font-size: 25px;
+               }
+               .link {
+                    margin: 0;
+                    padding: 0;
                }
 
                .mainname {
@@ -84,15 +87,13 @@
 
                .PR {
                     margin-top: 80px;
-                    margin-left: 10px;
+                    margin-left: 15px;
                }
 
                .P_R_child {
                     font-weight: bold;
                     color: #4eedff;
                     padding-bottom: 13px;
-               }
-               .P_R {
                     display: block;
                }
                .links:hover,
@@ -121,7 +122,7 @@
                          margin-top: 40px;
                     }
 
-                    .humbarger,
+                    .bar,
                     .link_parent {
                          display: block;
                     }
@@ -133,6 +134,10 @@
                          transition: color 1s ease, padding 1s ease, background-color 1s ease;
                     }
 
+                    .navigation {
+                         height: auto;
+                    }
+
                     .links:hover {
                          color: white;
                          padding-left: 30px;
@@ -140,14 +145,14 @@
                     }
 
                     .mainname {
-                         margin: auto 0px auto 20px;
+                         margin: auto 0px auto 10px;
                          color: yellow;
                     }
 
                     #logo {
-                         margin-left: 10px;
+                         margin: 5px 0px 5px 10px;
                          border-width: 3px;
-                         height: 130px;
+                         height: 100px;
                     }
                }
           </style>
@@ -165,18 +170,22 @@
                     <!-- Navigation -->
                     <ul class="menu-list">
                          <li class="link_parent">
-                              <a href="https://github.com/HITESH-235" class="links">GITHUB</a>
-                         </li>
-                         <li class="link_parent">
-                              <a href="https://www.facebook.com/HITESH235/" class="links"
-                                   >FACEBOOK</a
+                              <a href="https://github.com/HITESH-235" class="links"
+                                   ><h3 class="link">GITHUB</h3></a
                               >
                          </li>
                          <li class="link_parent">
-                              <a href="mailto:sinhahitesh0307@gmail.com" class="links">E-MAIL</a>
+                              <a href="https://www.facebook.com/HITESH235/" class="links"
+                                   ><h3 class="link">FACEBOOK</h3></a
+                              >
                          </li>
                          <li class="link_parent">
-                              <a href="#" class="links">ABOUT</a>
+                              <a href="mailto:sinhahitesh0307@gmail.com" class="links"
+                                   ><h3 class="link">E-MAIL</h3></a
+                              >
+                         </li>
+                         <li class="link_parent">
+                              <a href="#" class="links"><h3 class="link">ABOUT</h3></a>
                          </li>
                     </ul>
 

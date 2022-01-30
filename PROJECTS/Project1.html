@@ -7,14 +7,19 @@
           <title>HITESH-235//MAGICNOTES</title>
           <link rel="icon" type="image/x-icon" href="../IMAGES/LOGO.ico" />
           <link rel="stylesheet" href="../STYLES/Style1.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap"
+               rel="stylesheet"
+          />
           <style>
                body {
-                    font-family: "Oswald";
+                    font-family: "Chakra Petch";
                }
 
                .topnav {
@@ -43,7 +48,7 @@
                }
 
                .topnav a.active {
-                    background-color: slateblue;
+                    background-color: #0075b8;
                     color: white;
                }
 
@@ -51,7 +56,7 @@
                     display: none;
                }
 
-               @media screen and (max-width: 600px) {
+               @media screen and (max-width: 800px) {
                     .topnav a:not(:first-child) {
                          display: none;
                     }
@@ -60,9 +65,9 @@
                          float: right;
                          display: block;
                     }
-               }
-
-               @media screen and (max-width: 600px) {
+                    body {
+                         background-color: red;
+                    }
                     .topnav.responsive {
                          position: relative;
                     }
@@ -71,6 +76,7 @@
                          position: absolute;
                          right: 0;
                          top: 0;
+                         width: 30px;
                     }
 
                     .topnav.responsive a {
@@ -78,17 +84,24 @@
                          display: block;
                          text-align: left;
                     }
+
+                    #title {
+                         flex-grow: 1;
+                    }
+                    #save {
+                         flex-grow: 2;
+                    }
                }
           </style>
      </head>
 
      <body id="body">
           <div class="topnav" id="myTopnav">
-               <a href="#name" class="active"><b>Magic Notes</b></a>
-               <a href="../index.html">Home</a>
-               <a href="mailto:codonstream.72@gmail.com">E-Mail</a>
-               <a href="#about">About</a>
-               <a href="#search" id="search" onclick="change_to_searchable()">Search</a>
+               <a href="#name" class="active"><b>MAGIC NOTES</b></a>
+               <a href="../index.html">HOME</a>
+               <a href="mailto:codonstream.72@gmail.com">E-MAIL</a>
+               <a href="#about">ABOUT</a>
+               <a href="#search" id="search" onclick="change_to_searchable()">SEARCH</a>
                <a href="javascript:void(0);" class="icon" onclick="showbars()">
                     <i class="fa fa-bars"></i>
                </a>
@@ -100,28 +113,32 @@
                     class="message"
                     cols="80"
                     rows="8"
-                    placeholder="Enter Note"
+                    placeholder="ENTER NOTE"
                ></textarea
                ><br />
                <div class="buttons">
-                    <button class="btn" id="save" onclick="save()">Save</button>
+                    <button class="btn" id="save" onclick="save()">SAVE</button>
                     <textarea
                          type="text"
                          class="btn"
                          id="title"
                          rows="1"
-                         placeholder="Add Title"
+                         placeholder="ADD TITLE"
                     ></textarea>
                </div>
           </div>
           <div id="Section_notes">
-               <h1 class="h1"><u>Your Notes</u></h1>
+               <h1 class="h1">YOUR NOTES</h1>
           </div>
           <div id="notes"></div>
           <footer style="margin-top: 40px">
                <hr />
                <div>
-                    Copyright &copy; <u>https://hitesh-235.github.io/.</u> All rights reserved!
+                    Copyright &copy;
+                    <a href="https://hitesh-235.github.io/" class="footerlink"
+                         >https://hitesh-235.github.io/.</a
+                    >
+                    All rights reserved!
                </div>
           </footer>
      </body>

@@ -122,8 +122,8 @@ function showNotes() {
           html += `<div class="noteschild">
         <h3 class="h3">${name_array[index]}</h3>
         <textarea readonly id="message${index}" class='message' cols="20" rows="5">${element}</textarea>
-        <div class='buttons' id='No.${index}'><button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">Delete Note</button>
-        <button class='btn' id='${index + 1}' onclick="make_edit(this.id)">Edit</button>
+        <div class='buttons' id='No.${index}'><button class='btn' id="NO.${index}" onclick="deleteNote(this.id)">DELETE NOTE</button>
+        <button class='btn' id='${index + 1}' onclick="make_edit(this.id)">EDIT</button>
         </div>
         </div>`;
      });
@@ -186,12 +186,12 @@ function make_edit(index) {
      let child1 = document.createElement("button");
      child1.className = "btn";
      child1.id = `${int_index + 1}`;
-     child1.innerHTML = "Cancel";
+     child1.innerHTML = "CANCEL";
      child1.setAttribute("onclick", "lets_cancel(this.id)");
      let child2 = document.createElement("button");
      child2.className = "btn";
      child2.id = `${int_index + 2}`;
-     child2.innerHTML = "Save";
+     child2.innerHTML = "SAVE";
      child2.setAttribute("onclick", "lets_save(this.id)");
      let parent1 = document.createElement("div");
      parent1.className = "buttons";
@@ -220,7 +220,7 @@ function lets_cancel(index) {
      child_x2.className = "btn";
      child_x2.id = `${int_index2 - 1}`;
      child_x2.setAttribute("onclick", "make_edit(this.id)");
-     child_x2.innerText = "Edit";
+     child_x2.innerText = "EDIT";
      to_be_replaced1.appendChild(child_x2);
      parent2.replaceWith(to_be_replaced1);
      let just_chose2 = document.getElementById(`message${int_index2 - 2}`);
@@ -244,7 +244,7 @@ function lets_save(index) {
      child_x2.className = "btn";
      child_x2.id = `${int_index2 - 2}`;
      child_x2.setAttribute("onclick", "make_edit(this.id)");
-     child_x2.innerText = "Edit";
+     child_x2.innerText = "EDIT";
      to_be_replaced1.appendChild(child_x2);
      parent2.replaceWith(to_be_replaced1);
      let just_chose2 = document.getElementById(`message${int_index2 - 3}`);
@@ -263,7 +263,7 @@ x_search_a.className = "searchbar";
 x_search_a.id = "searchbar_parent_id";
 let x_search_input = document.createElement("input");
 x_search_input.className = "searchbar";
-x_search_input.setAttribute("placeholder", "Search");
+x_search_input.setAttribute("placeholder", "SEARCH");
 x_search_input.setAttribute("type", "search");
 x_search_input.id = "searchbar_id";
 x_search_a.appendChild(x_search_input);
