@@ -51,6 +51,9 @@
                                 background-color: #ddd;
                                 color: black;
                         }
+                        #searchbar_parent_id:hover {
+                                background-color: #0075b8;
+                        }
 
                         .topnav a.active {
                                 background-color: #0075b8;
@@ -69,7 +72,9 @@
                         <a href="../index.html">HOME</a>
                         <a href="mailto:codonstream.72@gmail.com">E-MAIL</a>
                         <a href="#about">ABOUT</a>
-                        <a href="#search" id="search" onclick="change_to_searchable()">SEARCH</a>
+                        <a href="#search" id="search" onclick="change_to_searchable()"
+                                >SEARCH</a
+                        >
                         <a href="javascript:void(0);" class="icon" onclick="showbars()">
                                 <i class="fa fa-bars"></i>
                         </a>
@@ -86,13 +91,15 @@
                         ><br />
                         <div class="buttons">
                                 <textarea
-                                type="text"
-                                class="btn"
-                                id="title"
-                                rows="1"
-                                placeholder="ADD TITLE"
+                                        type="text"
+                                        class="btn"
+                                        id="title"
+                                        rows="1"
+                                        placeholder="ADD TITLE"
                                 ></textarea>
-                                <button class="btn" id="save" onclick="save()">SAVE</button>
+                                <button class="btn" id="save" onclick="save()">
+                                        SAVE
+                                </button>
                         </div>
                 </div>
                 <div id="Section_notes">
