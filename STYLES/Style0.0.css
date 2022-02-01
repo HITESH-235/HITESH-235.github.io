@@ -5,17 +5,18 @@ html {
         scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-        width: 15px;
-        background: white;
+        width: 20px;
+        background: black;
+        border: 3px grey solid;
 }
 ::-webkit-scrollbar-thumb {
-        background: rgb(0, 191, 255);
-        border: 2px black solid;
+        background: #007bc2;
+        border: 3px white solid;
+        border-right: none;
 }
 ::-webkit-scrollbar-button {
         background-color: #83ff83;
         height: 20px;
-        border: 2px black solid;
 }
 
 #navbar {

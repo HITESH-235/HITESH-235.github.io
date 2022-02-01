@@ -28,10 +28,18 @@
         /* min-width: 120px; */
 }
 
-footer {
-        font-size: 20px;
-}
+
 
 #h1id_2 {
         font-size: 50px;
+}
+.searchbar {
+        font-size: 20px;
+}
+.searchbar::placeholder {
+        font-size: 20px;
+}
+#body,
+footer {
+        font-size: 20px;
 }
