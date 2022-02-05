@@ -68,6 +68,7 @@
         color: aquamarine;
         letter-spacing: 1px;
         margin: 10px 15px auto 15px;
+        font-size: 25px;
 }
 
 /* SAVE AND ADD TITLE SECTION */
@@ -135,6 +136,7 @@ textarea::-webkit-scrollbar-button {
         font-family: inherit;
         height: 35px;
         border-radius: 10px;
+        width: 200px;
 }
 
 .searchbar {
@@ -156,7 +158,6 @@ textarea::-webkit-scrollbar-button {
 #message_1::placeholder {
         font-family: "Chakra Petch";
         color: white;
-        font-size: 25px;
 }
 
 #new_name::placeholder {

@@ -31,15 +31,13 @@
 #h1id_2 {
         font-size: 50px;
 }
-.searchbar {
-        font-size: 20px;
-}
-.searchbar::placeholder {
-        font-size: 20px;
-}
+
 #body,
 footer,
 .btn,
-textarea {
+.message,
+.message::placeholder,
+.searchbar,
+.seachbar::placeholder {
         font-size: 20px;
 }
