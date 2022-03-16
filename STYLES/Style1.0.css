@@ -69,8 +69,7 @@
         font-size: 25px;
         font-family: "Chakra Petch";
         font-weight: bold;
-        /* color: aquamarine; */
-        color: #6ac8ff;
+        color: #83ff83;
         letter-spacing: 1px;
         margin: 10px 15px auto 15px;
         font-size: 25px;
@@ -131,7 +130,7 @@ textarea::-webkit-scrollbar-button {
 
 .btn:hover,
 .btn:active {
-        background: #65ff65;
+        background: #83ff83;
         cursor: pointer;
         color: rgb(55, 55, 55);
 }
