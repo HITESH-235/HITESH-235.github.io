@@ -15,8 +15,8 @@
 #body::before {
         content: "";
         position: fixed;
-        /* background: url('../bg1.jpg') no-repeat center center/cover; */
-        background: linear-gradient(to top left, rgb(12, 72, 91) 50%, black 50%);
+        /* background: linear-gradient(to top left, rgb(12, 72, 91) 50%, black 50%); */
+        background: linear-gradient(to top left, #2c6d2c 50%, rgb(12, 72, 91) 50%);
         top:0px;
         left:0px;
         width: 100%;
@@ -36,7 +36,10 @@
         overflow-x: hidden;
         min-height: 100%;
 }
-
+.active {
+        -webkit-text-stroke: 0.7px white;
+        letter-spacing: 1px;
+}
 #card {
         display: flex;
         flex-flow: column;
@@ -50,23 +53,24 @@
 }
 
 .h1 {
-        /* text-shadow: 0 0 5px #2daaf2, 0 0 10px #2daaf2, 0 0 20px #2daaf2, 0 0 40px #2daaf2; */
-        /* -webkit-text-stroke: 2px white; */
+        -webkit-text-stroke: 2px rgb(220, 220, 220);
+        letter-spacing: 2px;
         text-align: center;
-        color: white;
+        color: rgb(220, 220, 220);
         font-size: 60px;
         margin: auto;
         font-weight: bold;
 }
 
 .message {
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.199);
         border: 5px solid lightgray;
         border-radius: 5px;
         font-size: 25px;
         font-family: "Chakra Petch";
         font-weight: bold;
-        color: aquamarine;
+        /* color: aquamarine; */
+        color: #6ac8ff;
         letter-spacing: 1px;
         margin: 10px 15px auto 15px;
         font-size: 25px;
@@ -127,8 +131,9 @@ textarea::-webkit-scrollbar-button {
 
 .btn:hover,
 .btn:active {
-        background: black;
+        background: #65ff65;
         cursor: pointer;
+        color: rgb(55, 55, 55);
 }
 
 /* SEARCHBAR(#SEARCHBAR_ID )*/
@@ -153,8 +158,8 @@ textarea::-webkit-scrollbar-button {
 /*  NOTE CARD*/
 
 #message_1 {
-        background: black;
-        color: yellow;
+        background: rgba(0, 0, 0, 0.42);
+        color: #9adaff;
 }
 #message_1::placeholder {
         font-family: "Chakra Petch";
@@ -196,12 +201,13 @@ textarea::-webkit-scrollbar-button {
 
 footer {
         text-align: center;
-        text-shadow: 0 0 1px orange, 0 0 2px orange, 0 0 10px orange, 0 0 20px orange;
         width: 100%;
         margin-bottom: 10px;
+        margin-top: 40px;
         overflow: hidden;
         font-size: 23px;
+        color: white;
 }
 .footerlink {
-        color: white;
+        color: aqua;
 }

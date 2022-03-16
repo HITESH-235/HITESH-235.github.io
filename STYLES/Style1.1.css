@@ -41,3 +41,7 @@ footer,
 .seachbar::placeholder {
         font-size: 20px;
 }
+.active {
+        -webkit-text-stroke: 0.3px white;
+        letter-spacing: 1px;
+}

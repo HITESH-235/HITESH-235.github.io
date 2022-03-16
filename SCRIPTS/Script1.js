@@ -141,7 +141,8 @@ function showNotes() {
                 notesElm.innerHTML = html;
         } else {
                 notesElm.style.textAlign = "center";
-                notesElm.innerHTML = `NOTHING TO SHOW! WRITE SOMETHING & USE "SAVE" BUTTON ABOVE TO ADD NOTES.`;
+                notesElm.innerHTML = `Nothing to show!! Write something & click "SAVE" button above to add notes.`;
+                notesElm.style.color = "lightgray";
         }
 }
 
