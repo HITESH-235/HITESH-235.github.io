@@ -1,3 +1,21 @@
+html {
+        scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+        width: 20px;
+        background: black;
+        border: 3px grey solid;
+}
+::-webkit-scrollbar-thumb {
+        background: #007bc2;
+        border: 3px white solid;
+        border-right: none;
+}
+::-webkit-scrollbar-button {
+        background-color: #83ff83;
+        height: 20px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
