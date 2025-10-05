@@ -28,7 +28,10 @@
   <header>
     <nav class="navbar">
       <a href="#home" class="logo">MyPortfolio</a>
-      <div class="nav-links">
+
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="https://github.com/HITESH-235">Github</a>
         <a href="https://www.linkedin.com/in/hitesh235/">Linkedin</a>
@@ -144,4 +147,12 @@
     <p>© Hitesh Sinha</p>
   </footer>
 </body>
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </html>
