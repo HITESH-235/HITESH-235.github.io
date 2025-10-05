@@ -1,293 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <meta charset="UTF-8" />
-                <meta name="author" content="HîTESH SîNHA" />
-                <meta
-                        name="description"
-                        content="Hi there!! Have a try at my food ordering and notekeeping pages! This site is made for fun & but hasn't much content, 'coz a teenager has less free time than you think"
-                />
-                <meta
-                        name="keywords"
-                        content="HITESH-235, HITESH SINHA, HîTESH-235, HîTESH SîNHA, hitesh, hit, HS, hs, hiteshsinha, 235, Notes, Add Notes, Order Food, Ordering Online food, magic notes, my online meals"
-                />
-                <meta
-                        name="twitter:image:src"
-                        content="https://hitesh-235.github.io/IMAGES/LOGO2.png"
-                />
-                <meta name="twitter:site" content="hitesh-235.github.io" />
-                <meta name="twitter:title" content="HîTESH SîNHA" />
-                <meta name="twitter:description" content="#KEEP_MOVING_FORWARD" />
-                <meta
-                        property="og:image"
-                        content="https://hitesh-235.github.io/IMAGES/LOGO2.png"
-                />
-                <meta property="og:image:alt" content="MEGATRIX" />
-                <meta property="og:site_name:href" content="hitesh-235.github.io" />
-                <meta property="og:type" content="Index" />
-                <meta property="og:title" content="HîTESH SîNHA" />
-                <meta property="og:url" content="https://hitesh-235.github.io" />
-                <meta property="og:description" content="#KEEP_MOVING_FORWARD" />
-                <meta property="profile:username" content="HITESH-235" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta
-                        name="google-site-verification"
-                        content="Rf9iZek7n_VKNtKUi07Iv_gjZuaUKWJjBNbC7ayjkvc"
-                />
-                <title>HITESH-235//HOME</title>
-                <link rel="icon" type="image/x-icon" href="IMAGES/LOGO.ico" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link
-                        href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-                        rel="stylesheet"
-                />
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-                <style>
-                        body::before {
-                                content: "";
-                                z-index: -1;
-                                position: fixed;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                /* background: linear-gradient(to bottom right, rgb(20, 33, 53) 0%, #69ff6a 300%); */
-                                /* background: linear-gradient(to bottom right, rgb(20, 33, 42) 60%, #357c35 40%); */
-                                background: linear-gradient(
-                                        to top left,
-                                        rgb(12, 72, 91) 50%,
-                                        rgb(20, 33, 42) 50%
-                                );
-                        }
-                        html,
-                        body {
-                                margin: 0%;
-                                font-family: 'Russo One', sans-serif;
-                                margin: 0;
-                                /* letter-spacing: 0.03em; */
-                                font-size: 0.8em;
-                        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="HîTESH SîNHA" />
+  <meta name="description" content="Hi there!! Have a try at my food ordering and notekeeping pages! This site is made for fun & but hasn't much content, 'coz a teenager has less free time than you think" />
+  <meta name="keywords" content="HITESH-235, HITESH SINHA, HîTESH-235, HîTESH SîNHA, hitesh, hit, HS, hs, hiteshsinha, 235, Notes, Add Notes, Order Food, Ordering Online food, magic notes, my online meals" />
+  <meta name="twitter:image:src" content="https://hitesh-235.github.io/IMAGES/LOGO2.png"/>
+  <meta name="twitter:site" content="hitesh-235.github.io" />
+  <meta name="twitter:title" content="HîTESH SîNHA" />
+  <meta name="twitter:description" content="#KEEP_MOVING_FORWARD" />
+  <meta property="og:image" content="https://hitesh-235.github.io/IMAGES/LOGO2.png"/>
+  <meta property="og:image:alt" content="MEGATRIX" />
+  <meta property="og:site_name:href" content="hitesh-235.github.io" />
+  <meta property="og:type" content="Index" />
+  <meta property="og:title" content="HîTESH SîNHA" />
+  <meta property="og:url" content="https://hitesh-235.github.io" />
+  <meta property="og:description" content="#KEEP_MOVING_FORWARD" />
+  <meta property="profile:username" content="HITESH-235" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="Rf9iZek7n_VKNtKUi07Iv_gjZuaUKWJjBNbC7ayjkvc"/>
+  <title>HITESH-235//HOME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="STYLES/style.css"/>
+</head>
 
-                        .navigation {
-                                position: relative;
-                                border: white solid 5px;
-                                border-radius: 30px;
-                                font-weight: bold;
-                                align-items: center;
-                                display: flex;
-                                justify-content: space-between;
-                                height: 160px;
-                                width: auto;
-                                background: transparent;
-                                margin: 8px;
-                                align-self: center;
-                        }
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">MyPortfolio</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="https://github.com/HITESH-235">Github</a>
+        <a href="https://www.linkedin.com/in/hitesh235/">Linkedin</a>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+      </div>
+    </nav>
+  </header>
 
-                        .nav_child {
-                                display: flex;
-                                flex-flow: row;
-                        }
+  <main style="padding-top:100px">
 
-                        #logo {
-                                margin-left: 20px;
-                                border: 4px solid #69ff6a;
-                                border-radius: 80px;
-                                height: 140px;
-                        }
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img src="IMAGES/My_Picture.jpg" alt="Hitesh Sinha" class="hero-img">
+        <h1 class="hero-title">Hitesh Sinha</h1>
+        <p class="hero-sub">Creative Web Developer & Data Structures n Algorithms Enthusiast</p>
+        <a href="#projects" class="hero-btn">View My Work</a>
+      </div>
+    </section>
 
-                        .menu-list {
-                                position: absolute;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                                list-style: none;
-                                align-items: center;
-                                width: 50%;
-                                right: 0;
-                        }
+    <section class="about-section" id="about">
+      <div class="glass-box about-box">
+        <img src="IMAGES/LOGO.png" alt="Hitesh Sinha" class="about-pic">
+        <div class="about-text">
+          <h2 class="about-heading">About Me</h2>
+          <p class="about-desc">
+            Hi, I'm Hitesh Sinha, 19, studying at Scaler School of Technology, Bangalore.
+            I am passionate about <span class="highlight">Data Structures & Algorithms</span> and 
+            <span class="highlight">Frontend Development</span>.
+            I code in Java, Python, HTML, CSS, and JavaScript, and I love building clean, responsive websites 
+            while learning & solving tough Competitive Programming and Data Structure & Algorithms problems and concepts.
+          </p>
+        </div>
+      </div>
+    </section>
 
-                        .bar {
-                                border-top-right-radius: 2px;
-                                border-bottom-left-radius: 2px;
-                                display: none;
-                                width: 27px;
-                                height: 6px;
-                                margin: 4px 5px 4px 10px;
-                                background: greenyellow;
-                        }
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="glass-box project-card">
+          <img src="IMAGES/Food_Order.png" alt="Food Ordering">
+          <div class="project-content">
+            <h3>Food Ordering</h3>
+            <p>Fully responsive html-css food ordering site non functional</p>
+            <a href="PROJECTS/Project0.html" class="project-link">View Details →</a>
+          </div>
+        </div>
 
-                        .links {
-                                color: aqua;
-                                text-transform: uppercase;
-                                cursor: pointer;
-                                text-decoration: none;
-                        }
-                        .link {
-                                margin: 0;
-                                padding: 0;
-                        }
+        <div class="glass-box project-card">
+          <img src="IMAGES/Note.png" alt="Task App">
+          <div class="project-content">
+            <h3>Note Taker</h3>
+            <p>Fully responsive note adding, deleting, updating project made with html-css-javascript</p>
+            <a href="PROJECTS/Project1.html" class="project-link">View Details →</a>
+          </div>
+        </div>
 
-                        .mainname {
-                                margin: auto 0px auto 30px;
-                                color: #83ff83;
-                                -webkit-text-stroke: 0.02em #83ff83;
-                                letter-spacing: 0.07em;
-                        }
+        <div class="glass-box project-card">
+          <img src="IMAGES/dummy.png" alt="Portfolio">
+          <div class="project-content">
+            <h3>Dummy Project</h3>
+            <p>Coming Soon!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        .PR {
-                                margin-top: 80px;
-                                margin-left: 10px;
-                        }
+    <section class="skills" id="languages">
+      <h2>Languages I Know</h2>
+      <div class="skills-list">
+        <div class="glass-box skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <p>Java</p>
+        </div>
 
-                        .P_R_child {
-                                color: aquamarine;
-                                padding-bottom: 13px;
-                                display: block;
-                        }
-                        .links:hover,
-                        .P_R_child:hover {
-                                color: aqua;
-                                text-decoration: underline;
-                        }
+        <div class="glass-box skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <p>Python</p>
+        </div>
 
-                        .links:active,
-                        .P_R_child:active {
-                                text-decoration: underline;
-                                color: springgreen;
-                        }
+        <div class="glass-box skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
 
-                        @media only screen and (max-width: 870px) {
-                                body {
-                                        font-size: 1em;
-                                }
-                                .menu-list {
-                                        position: absolute;
-                                        top: 12vh;
-                                        min-width: 100%;
-                                        background: rgba(15, 20, 25, 0.907);
-                                        text-align: center;
-                                        display: none;
-                                        margin: 0%;
-                                        padding: 0%;
-                                        border-radius: 10px;
-                                        margin-top: 30px;
-                                }
+        <div class="glass-box skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
 
-                                .bar,
-                                .link_parent {
-                                        display: block;
-                                }
+        <div class="glass-box skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </section>
 
-                                .links {
-                                        display: block;
-                                        padding-top: 20px;
-                                        padding-bottom: 20px;
-                                        transition: color 1s ease, padding 1s ease,
-                                                background-color 1s ease;
-                                }
+    <section class="contact" id="contact">
+      <div class="glass-box contact-box">
+        <h2>Get In Touch</h2>
+        <form action="#" method="POST">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-                                .navigation {
-                                        height: auto;
-                                        border-radius: 20px;
-                                        border-width: 3px;
-                                }
+  </main>
 
-                                .links:hover {
-                                        color: white;
-                                        padding-left: 30px;
-                                        background: rgb(5, 121, 183);
-                                }
-
-                                .mainname {
-                                        margin: auto 0px auto 5px;
-                                        color: aqua;
-                                        -webkit-text-stroke-color: transparent;
-                                        letter-spacing: 0.06em;
-                                }
-
-                                #logo {
-                                        margin: 5px 0px 5px 5px;
-                                        border-width: 3px;
-                                        height: 90px;
-                                }
-                        }
-                </style>
-        </head>
-
-        <body class="body">
-                <!--====== Header Section Start ======-->
-                <header>
-                        <nav class="navigation">
-                                <div class="nav_child">
-                                        <img
-                                                src="IMAGES/LOGO.png"
-                                                alt=""
-                                                height="110px"
-                                                id="logo"
-                                        />
-                                        <h2 class="mainname">HITESH-235</h2>
-                                </div>
-
-                                <!-- Navigation -->
-                                <ul class="menu-list">
-                                        <li class="link_parent">
-                                                <a
-                                                        href="https://github.com/HITESH-235"
-                                                        class="links"
-                                                        ><h3 class="link">GITHUB</h3></a
-                                                >
-                                        </li>
-                                        <li class="link_parent">
-                                                <a
-                                                        href="https://dev.to/hitesh235"
-                                                        class="links"
-                                                        ><h3 class="link">DEV</h3></a
-                                                >
-                                        </li>
-                                        <li class="link_parent">
-                                                <a
-                                                        href="https://www.facebook.com/HITESH235/"
-                                                        class="links"
-                                                        ><h3 class="link">FACEBOOK</h3></a
-                                                >
-                                        </li>
-                                        <li class="link_parent">
-                                                <a
-                                                        href="mailto:codonstream.72@gmail.com"
-                                                        class="links"
-                                                        ><h3 class="link">E-MAIL</h3></a
-                                                >
-                                        </li>
-                                </ul>
-
-                                <div class="humbarger">
-                                        <div class="bar"></div>
-                                        <div class="bar2 bar"></div>
-                                        <div class="bar"></div>
-                                </div>
-                        </nav>
-                </header>
-                <h3 class="PR">
-                        <pr class="P_R"
-                                ><a href="PROJECTS/Project0.html" class="P_R_child"
-                                        >//PROJECT: ZERO//MY-ONLINE-MEALS</a
-                                ></pr
-                        >
-                        <pr class="P_R"
-                                ><a href="PROJECTS/Project1.html" class="P_R_child"
-                                        >//PROJECT: ONE//ADD-NOTES</a
-                                ></pr
-                        >
-                </h3>
-        </body>
-        <script>
-                $(document).ready(function () {
-                        //hamburger Toggle
-                        $(".humbarger").click(function (event) {
-                                $(".menu-list").slideToggle(500);
-                                event.preventDefault();
-                        });
-                });
-        </script>
+  <footer>
+    <p>© Hitesh Sinha</p>
+  </footer>
+</body>
 </html>
